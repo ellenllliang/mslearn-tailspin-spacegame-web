@@ -49,7 +49,7 @@ steps:
     projects: '**/*.csproj'
     publishWebProjects: false
     arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
-    zipAfterPubli
+    zipAfterPublish: true
 
 - task: WhiteSource Bolt@19
   displayName: 'Run WhiteSource Bolt'
